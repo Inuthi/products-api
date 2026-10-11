@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
         @GetMapping("{id}")
         public Product getByID(@PathVariable long id) {
+
             return new Product(id, "Laptop", 999.99);
         }
     }
